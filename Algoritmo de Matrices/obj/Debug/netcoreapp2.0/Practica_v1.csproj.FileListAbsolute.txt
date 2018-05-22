@@ -1,0 +1,11 @@
+C:\Users\leslie.ramirez\Desktop\Leslie\stuffs\Analisis de Algoritmos\Practicas\Practica en el aula v1\practica_v1\bin\Debug\netcoreapp2.0\Practica_v1.deps.json
+C:\Users\leslie.ramirez\Desktop\Leslie\stuffs\Analisis de Algoritmos\Practicas\Practica en el aula v1\practica_v1\bin\Debug\netcoreapp2.0\Practica_v1.runtimeconfig.json
+C:\Users\leslie.ramirez\Desktop\Leslie\stuffs\Analisis de Algoritmos\Practicas\Practica en el aula v1\practica_v1\bin\Debug\netcoreapp2.0\Practica_v1.runtimeconfig.dev.json
+C:\Users\leslie.ramirez\Desktop\Leslie\stuffs\Analisis de Algoritmos\Practicas\Practica en el aula v1\practica_v1\bin\Debug\netcoreapp2.0\Practica_v1.dll
+C:\Users\leslie.ramirez\Desktop\Leslie\stuffs\Analisis de Algoritmos\Practicas\Practica en el aula v1\practica_v1\bin\Debug\netcoreapp2.0\Practica_v1.pdb
+C:\Users\leslie.ramirez\Desktop\Leslie\stuffs\Analisis de Algoritmos\Practicas\Practica en el aula v1\practica_v1\obj\Debug\netcoreapp2.0\Practica_v1.csprojResolveAssemblyReference.cache
+C:\Users\leslie.ramirez\Desktop\Leslie\stuffs\Analisis de Algoritmos\Practicas\Practica en el aula v1\practica_v1\obj\Debug\netcoreapp2.0\Practica_v1.csproj.CoreCompileInputs.cache
+C:\Users\leslie.ramirez\Desktop\Leslie\stuffs\Analisis de Algoritmos\Practicas\Practica en el aula v1\practica_v1\obj\Debug\netcoreapp2.0\Practica_v1.AssemblyInfoInputs.cache
+C:\Users\leslie.ramirez\Desktop\Leslie\stuffs\Analisis de Algoritmos\Practicas\Practica en el aula v1\practica_v1\obj\Debug\netcoreapp2.0\Practica_v1.AssemblyInfo.cs
+C:\Users\leslie.ramirez\Desktop\Leslie\stuffs\Analisis de Algoritmos\Practicas\Practica en el aula v1\practica_v1\obj\Debug\netcoreapp2.0\Practica_v1.dll
+C:\Users\leslie.ramirez\Desktop\Leslie\stuffs\Analisis de Algoritmos\Practicas\Practica en el aula v1\practica_v1\obj\Debug\netcoreapp2.0\Practica_v1.pdb
