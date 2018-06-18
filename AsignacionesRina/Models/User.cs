@@ -15,6 +15,8 @@ namespace  RinaLessons.Models
 
         public int RoleId {get; set;}
 
-        public byte status  {get; set;}
+        public byte Status  {get; set;}
+
+        public string Password {get; set;}
     }
 }
