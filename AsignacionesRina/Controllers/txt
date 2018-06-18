@@ -1,0 +1,29 @@
+ var headerObj = JsonConvert.DeserializeObject<RequestHeaderUser> (whatHeader);
+            
+             var member = _securityLib.CheckTokenUser(headerObj.uuid);
+             if(whatHeader == null){
+                  return BadRequest();
+             }else if (member == true){
+                var login = _userLib.userLoginAccess(whatHeader);
+            }
+        }
+        
+          //         if (login.response !="Ok"){
+                //     return StatusCode((int)HttpStatusCode.Unauthorized, login);
+                // }else
+                //     return Ok(login);
+                // }
+                // else{
+                //     return StatusCode((int)HttpStatusCode.Unauthorized, login);
+                // }
+        // return StatusCode((int)HttpStatusCode.Unauthorized,_userLib.userLoginAccess(whatHeader) );
+        //  var member =_securityLib.CheckTokenUser(whatHeader);
+        //  if(){
+        //        
+
+           // }else{
+            //     return StatusCode((int)HttpStatusCode.Unauthorized);
+            //     }
+            // }
+            //  var login = _userLib.userLoginAccess(whatHeader);
+            //     if(login.response != "Ok"){
