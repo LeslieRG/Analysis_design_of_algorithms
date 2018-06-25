@@ -8,6 +8,5 @@ namespace RinaLessons.Models{
         public string SubjectName { get; set; }
 
         public DateTime CreatedOn { get; set; }
-        public byte Status { get; set; }
     }
 }

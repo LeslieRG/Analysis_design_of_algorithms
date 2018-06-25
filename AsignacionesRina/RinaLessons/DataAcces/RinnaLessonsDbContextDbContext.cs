@@ -11,8 +11,9 @@ namespace RinaLessons.DataAcces{
 
         public DbSet<User> Users{get; set;}
         public DbSet<Homework> HomeWorks{get; set;}
-        public DbSet<Homework> Enrollment{get; set;}
+        public DbSet<Enrollment> Enrollments{get; set;}
         public DbSet<Subject> Subjects{get; set;}
         public DbSet<Role> Roles{get; set;}
+        public DbSet<AssignamentsStudent> Asigned {get; set;}
     }
 }

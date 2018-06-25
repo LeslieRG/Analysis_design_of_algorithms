@@ -38,7 +38,7 @@ namespace RinaLessons.Controllers{
         [HttpPost("{TeacherId}")]
         public IActionResult CreateSubject(int TeacherId, [FromBody] Subject subject){
 
-        var teacher = _context.Users.Any(t => t.UserId == TeacherId && t.RoleId == 2);
+        var teacher = _context.Users.Any(t => t.UserId == TeacherId && t.Role == 2);
            if(TeacherId == 0){
                return BadRequest();
            } else if(teacher == true){
@@ -62,7 +62,7 @@ namespace RinaLessons.Controllers{
 
             //var Nombre = JsonConvert.DeserializeObject<Subject>(subject);
             var subjectEx = _context.Subjects.FirstOrDefault(s => s.SubjectId == sub.SubjectId);
-            var teacher = _context.Users.Any(t => t.UserId == sub.UserId && t.RoleId == 2);
+            var teacher = _context.Users.Any(t => t.UserId == sub.UserId && t.Role == 2);
 
            if(sub.SubjectId == 0 || sub.UserId == 0 ){
                return BadRequest();
@@ -100,7 +100,7 @@ namespace RinaLessons.Controllers{
                 });
             }
             else {
-                existingSubject.Status = 0;
+                
                 _context.Subjects.Update(existingSubject);
                 _context.SaveChanges();
                 return Json (new Response{

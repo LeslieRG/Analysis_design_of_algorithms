@@ -1,0 +1,11 @@
+C:\Users\leslie.ramirez\Desktop\Rina\proyect\RinaLessons\bin\Debug\netcoreapp2.0\RinaLessons.deps.json
+C:\Users\leslie.ramirez\Desktop\Rina\proyect\RinaLessons\bin\Debug\netcoreapp2.0\RinaLessons.runtimeconfig.json
+C:\Users\leslie.ramirez\Desktop\Rina\proyect\RinaLessons\bin\Debug\netcoreapp2.0\RinaLessons.runtimeconfig.dev.json
+C:\Users\leslie.ramirez\Desktop\Rina\proyect\RinaLessons\bin\Debug\netcoreapp2.0\RinaLessons.dll
+C:\Users\leslie.ramirez\Desktop\Rina\proyect\RinaLessons\bin\Debug\netcoreapp2.0\RinaLessons.pdb
+C:\Users\leslie.ramirez\Desktop\Rina\proyect\RinaLessons\obj\Debug\netcoreapp2.0\RinaLessons.csprojResolveAssemblyReference.cache
+C:\Users\leslie.ramirez\Desktop\Rina\proyect\RinaLessons\obj\Debug\netcoreapp2.0\RinaLessons.csproj.CoreCompileInputs.cache
+C:\Users\leslie.ramirez\Desktop\Rina\proyect\RinaLessons\obj\Debug\netcoreapp2.0\RinaLessons.AssemblyInfoInputs.cache
+C:\Users\leslie.ramirez\Desktop\Rina\proyect\RinaLessons\obj\Debug\netcoreapp2.0\RinaLessons.AssemblyInfo.cs
+C:\Users\leslie.ramirez\Desktop\Rina\proyect\RinaLessons\obj\Debug\netcoreapp2.0\RinaLessons.dll
+C:\Users\leslie.ramirez\Desktop\Rina\proyect\RinaLessons\obj\Debug\netcoreapp2.0\RinaLessons.pdb

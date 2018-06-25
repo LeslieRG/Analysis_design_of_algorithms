@@ -23,28 +23,36 @@ namespace RinaLessons.Controllers{
              return Ok(_context.Users.ToList());
         }
 
-        [HttpPost("{login}")]
-        public IActionResult Authentication([FromBody] Authentication validation){
-            var user = _context.Users.Any(u => u.UserName == validation.UserName ||
-                                         u.Email == validation.Email
-                                         || u.Cellphone == validation.Cellphone
-                                          && u.Password == validation.Password);
-            if (user == true){
-                return Ok();
+        [HttpPost ("login")]
+        public IActionResult userLogin ([FromBody] int UserId, string Password) {
+          var user = _context.Users.FirstOrDefault( u => u.UserId == UserId && u.Password == Password);
+            if (user == null) {
+                return Unauthorized ();
+            } 
+            else if(user.Role == 1) {
+              return Json (new Response{
+                        message = "Ok",
+                        info = "Profesor"
+              });
+            
             }else{
-                return Unauthorized();
+                    return Json (new Response{
+                        message = "Ok",
+                        info = "Estudiante"
+                    });
             }
         }
+        
 
         [HttpGet("GetAllTeacher")]
         public IActionResult GetAllTeacher(){
 
-            return Ok(_context.Users.ToList().Where(ct => ct.RoleId == 2));
+            return Ok(_context.Users.ToList().Where(ct => ct.Role == 2));
         }
         [HttpGet("GetAllStudents")]
         public ActionResult GetAllStudents(){
 
-            return Ok(_context.Users.ToList().Where(ct => ct.RoleId == 3));
+            return Ok(_context.Users.ToList().Where(ct => ct.Role == 3));
         }
 
         [HttpPost]
@@ -114,7 +122,7 @@ namespace RinaLessons.Controllers{
                 });
             }
             else {
-                existingUser.Status = 0;
+               
                 _context.Users.Update(existingUser);
                 _context.SaveChanges();
                 return Json (new Response{

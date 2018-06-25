@@ -11,11 +11,9 @@ namespace  RinaLessons.Models
 
         public string  Email { get; set; }
 
-        public DateTime DateCreated { get; set; }
+        public DateTime CreateOn { get; set; }
 
-        public int RoleId {get; set;}
-
-        public byte Status  {get; set;}
+        public int Role {get; set;}
 
         public string Password {get; set;}
     }
