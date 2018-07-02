@@ -1,0 +1,63 @@
+create database RinaLesson;
+drop database rinalesson
+use RinaLesson;
+
+create table `Users`(
+UserId int primary key auto_increment,
+UserName varchar(30),
+LastName varchar(30),
+Cellphone varchar(30),
+Email varchar(30),
+CreatedOn datetime,
+Role int, 
+Password varchar(30)
+
+);
+
+create table `Subjects`(
+SubjectId int primary key auto_increment,
+UserId int,
+SubjectName varchar(30),
+CreatedOn datetime,
+Status int,
+FOREIGN KEY (UserId) REFERENCES User(UserId)
+);
+
+create table `HomeWorks`(
+
+HomeworkId int primary key auto_increment,
+SubjectId int,
+TeacherId int,
+CreatedOn datetime,
+Title varchar(30),
+Description varchar(500),
+FOREIGN KEY (TeacherId) REFERENCES User(UserId),
+FOREIGN KEY (SubjectId) REFERENCES Subject(SubjectId)
+);
+
+create table `Enrollments`(
+EnrollmentId int primary key auto_increment,
+SubjectId int,
+TeacherId int,
+CreatedOn datetime,
+UserId int,
+Title varchar(30),
+Description varchar(500),
+FOREIGN KEY (SubjectId) REFERENCES `Subject`(SubjectId),
+FOREIGN KEY (TeacherId) REFERENCES `User`(UserId),
+FOREIGN KEY (UserId) REFERENCES `User`(SubjectId)
+);
+
+
+creaTE TABLE `Asigned`(
+AssignamentId int primary key auto_increment,
+UserId int,
+SubjectId int,
+HomeworkId int,
+FOREIGN KEY (UserId) REFERENCES `User`(SubjectId),
+FOREIGN KEY (SubjectId) REFERENCES `Subject`(SubjectId),
+FOREIGN KEY (HomeworkId) REFERENCES `Homework`(HomeworkId)
+);
+
+select * from Asigned;
+insert into homeworks(homeworkid, subjectid, teacherId, title, description)  values (3, 1, 1, "dghdghdghd", "ejerc 1")
